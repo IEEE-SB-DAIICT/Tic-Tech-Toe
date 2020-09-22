@@ -14,20 +14,22 @@ body {
 
 .hero-section {
   position: relative;
-  background: #a8c0ff; /* fallback for old browsers */
+  background: #a8c0ff; 
   background: -webkit-linear-gradient(
     to bottom right,
-    #3f2b96,
-    #a8c0ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    #fa709a,
+    #fee140
+  );
   background: linear-gradient(
     to bottom right,
-    #3f5efb,
-    #fc466b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #fa709a,
+    #fee140
+  ); 
+
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%) !important;
 }
 
-.hackrcdu {
+.tictech {
   position: absolute;
   z-index: 2;
   font-size: 1.9rem;
@@ -36,19 +38,19 @@ body {
   top: 25%;
 }
 
-.hackrcdu h1 {
+.tictech h1 {
   font-family: Poppins;
   margin-bottom: 10px;
   color: white;
 }
 
-.hackrcdu h3 {
+.tictech h3 {
   font-family: Poppins;
   padding-bottom: 5px;
   color: white;
 }
 
-.hackrcdu h5 {
+.tictech h5 {
   font-family: Poppins;
   color: white;
   padding-bottom: 5px;
@@ -710,7 +712,7 @@ td:last-child {
   border-right: 0px;
 }
 
-.accordion a {
+/* .accordion a {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -789,4 +791,4 @@ td:last-child {
   -webkit-transition: all 0.35s ease 0.15s;
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
-}
+} */

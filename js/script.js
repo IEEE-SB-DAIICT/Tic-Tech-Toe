@@ -3,8 +3,8 @@ const second = 1000,
   hour = minute * 60,
   day = hour * 24;
 
-let countDown = new Date("Feb 27, 2020 09:00:00").getTime(),
-  x = setInterval(function() {
+let countDown = new Date("Nov 7, 2020 09:00:00").getTime(),
+  x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
 
@@ -30,11 +30,33 @@ let countDown = new Date("Feb 27, 2020 09:00:00").getTime(),
     //}
   }, second);
 
-const items = document.querySelectorAll(".accordion a");
+
+// Old FAQ
+// const items = document.querySelectorAll(".accordion a");
+
+// function toggleAccordion() {
+//   this.classList.toggle("active");
+//   this.nextElementSibling.classList.toggle("active");
+// }
+
+// items.forEach(item => item.addEventListener("click", toggleAccordion));
+
+// New FAQ
+
+
+const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
-  this.classList.toggle("active");
-  this.nextElementSibling.classList.toggle("active");
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
 }
 
-items.forEach(item => item.addEventListener("click", toggleAccordion));
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
