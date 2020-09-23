@@ -26,7 +26,7 @@
 
     <title>Tic Tech Toe</title>
 
-    <!-- Logo on tab -->
+    <!-- Logo on browser tab -->
     <link rel="icon" href="assets/logo.png" />
 
     <!-- font awesome for icons -->
@@ -37,7 +37,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- animate.css -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
@@ -49,6 +48,7 @@
     <link rel="stylesheet" href="css/particles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/faqs.css" />
+    <link rel="stylesheet" href="css/grids.css" />
 
     <!--google fonts-->
     <link
@@ -99,7 +99,7 @@
         </nav>
         <div class="tictech">
           <!-- <h1 class="animated flipInX">Tic Tech Toe</h1> -->
-          <img src="assets/TicTechToeBGless.png" width="400em" />
+          <img src="assets/TicTechToeBGless.png" />
           <h3>May the code be with you!</h3>
           <h5>
             Organised by IEEE Student Branch <br />
@@ -118,8 +118,7 @@
               />
               <path
                 d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"
-              /></svg
-            >Apply with Devfolio
+              /></svg>Apply with Devfolio
           </button>
           <div class="icons">
             <!-- <a href="https://www.linkedin.com/company/turington-rcdu"
@@ -153,20 +152,24 @@
         </div>
       </div>
     </header>
+
+    <div class="timer">
+      <div class="highlights">
+        <h1 class="animated flip delay-2s">Hackathon Starts in</h1>
+        <div class="container">
+          <ul class="countdown">
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="section-container">
       <!-- About Section -->
       <section id="about-section" class="section about-section">
-        <div class="highlights">
-          <h1 class="animated flip delay-2s">Hackathon Highlights_</h1>
-          <div class="container">
-            <ul class="countdown">
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
-            </ul>
-          </div>
-        </div>
+        
         <div class="prize">
           <div class="prize-card">
             Prizes Worth <br />
@@ -196,40 +199,52 @@
       <!-- Info section - new cards -->
 
       <section id="themes-section" class="section themes-section">
-        <h1 class="animated flip delay-2s">Themes_</h1>
+        <h1 class="animated flip delay-2s">Themes</h1>
         <div class="theme-cards">
           <div class="theme-card card-clock">
             <i class="fas fa-cubes animated bounceIn delay-2s"></i>
-            <h3>Machine Learning</h3>
+            <h3>Blockchain</h3>
           </div>
           <div class="theme-card card-themes">
-            <i class="fas fa-vr-cardboard animated bounceIn delay-2s"></i>
-            <h3>AR/VR</h3>
+            <i class="fas fa-subway animated bounceIn delay-2s"></i>
+            <h3>Mobility</h3>
           </div>
           <div class="theme-card card-teams">
             <i class="fas fa-network-wired animated bounceIn delay-2s"></i>
-            <h3>BlockChain</h3>
+            <h3>Web/App development</h3>
           </div>
           <div class="theme-card card-clock">
             <i class="fas fa-users animated bounceIn delay-2s"></i>
-            <h3>Health Care</h3>
+            <h3>Cyber security</h3>
           </div>
           <div class="theme-card card-themes">
             <i class="fas fa-money-check-alt animated bounceIn delay-2s"></i>
-            <h3>FinTech</h3>
+            <h3>AI/ML</h3>
           </div>
           <div class="theme-card card-teams">
-            <i class="fas fa-microchip animated bounceIn delay-2s"></i>
+            <i class="fas fa-money-check-alt animated bounceIn delay-2s"></i>
+            <h3>Fin-Tech</h3>
+          </div>
+          <div class="theme-card card-teams">
+            <i class="fas fa-heartbeat animated bounceIn delay-2s"></i>
+            <h3>Health Care</h3>
+          </div>
+          <div class="theme-card card-teams">
+            <i class="fas fa-user-shield animated bounceIn delay-2s"></i>
             <h3>Women in safety</h3>
+          </div>
+          <div class="theme-card card-teams">
+            <i class="fas fa-vr-cardboard animated bounceIn delay-2s"></i>
+            <h3>AR/VR</h3>
           </div>
         </div>
       </section>
 
       <!-- Schedule Section -->
+      <div class="event-schedule">
+        <h1 class="animated flip delay-2s">Event Schedule_</h1>
+      </div>
       <section id="schedule-section" class="section schedule-section">
-        <div class="event-schedule">
-          <h1 class="animated flip delay-2s">Event Schedule_</h1>
-        </div>
         <div class="schedule-section-section">
           <div class="section-1">
             <h2 style="text-align: center">DAY 1</h2>
@@ -369,7 +384,7 @@
             <div class="div8 event-card"><a href="https://turington.in">
               <h2>T-Shirt Painting</h2>
             </a></div>
-            <!--
+
             <div class="div9 event-card">event 9</div>
             <div class="div10 event-card">event 10</div>
             <div class="div11 event-card">event 11</div>
@@ -379,7 +394,6 @@
         </div>
       </div>
     </section> -->
-      -->
 
       <section id="sponsors-section" class="section sponsors-section">
         <div class="sponsors-section-section">
@@ -563,19 +577,13 @@
       </section>
     </div>
     <footer id="footer" class="footer">
-      <!-- <div class="footer-contact"> -->
-      <!-- <h4>Contact Us: <br>
-        Pavan Gandhi - 91749 20199 <br>
-        Toseef Ali Khan - 72918 48772 <br>
-        Mail: pavan.gandhi@ramanujan.du.ac.in</h4>
-        </div>
-      <h4>Made with <i class="fas fa-heart"></i> by <a href="https://www.linkedin.com/in/pavan-gandhi/"><span>Pavan Gandhi</span></a> & <a href="https://github.com/PawanVerma1337"><span>Pawan Verma</span></a></h4> -->
+      <div class="footer-contact">
+        <h4>IEEE Student Branch, DAIICT</h4>
+        <h4>Contact: +91 1234123412</h4>
+      </div>
     </footer>
 
-    <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <!-- JavaScript Files -->
     <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
 
@@ -583,7 +591,7 @@
       document.addEventListener('DOMContentLoaded', function () {
         let devfolioOptions = {
           buttonSelector: '#devfolio-apply-now',
-          key: 'hackrcdu',
+          key: 'KEY',
         };
 
         let script = document.createElement('script');
