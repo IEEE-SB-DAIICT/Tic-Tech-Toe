@@ -141,7 +141,8 @@
 
   .about-section {
     /* height: 115vh; */
-    margin-top: 0;
+    /* margin-top: 0; */
+    padding-top: 50px;
     background: white;
     display: flex;
     justify-content: center;
@@ -250,8 +251,14 @@
     font-size: 1rem;
   }
 
+  /* .section-container{
+    display: flex;
+    align-items: center;
+
+  } */
+
   .themes-section {
-    height: 225vh;
+    /* height: 225vh; */
     margin-top: 0;
     margin-bottom: 50px;
     background: white;
@@ -259,6 +266,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .themes-section h1 {
@@ -268,7 +276,9 @@
   .theme-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* position: relative; */
+    /* margin-top: 500px; */
   }
 
   .theme-card {
