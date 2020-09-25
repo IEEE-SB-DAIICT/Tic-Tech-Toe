@@ -9,7 +9,7 @@ body {
 canvas {
   display: block;
   /* position: fixed; */ /* REMOVE this line to keep hexagons to first section only */
-  position: absolute;
+  position: relative;
   top: 0;
 } 
 /* ---- particles.js container ---- */
