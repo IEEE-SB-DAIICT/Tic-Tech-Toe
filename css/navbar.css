@@ -9,7 +9,7 @@ body {
 }
 
 .navbar {
-  font-size: 25px;
+  font-size: 18px;
   background: transparent;
 }
 
@@ -24,12 +24,12 @@ body {
 .nav-links,
 .hacklogo {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   /* color: rgba(9, 19, 4, 0.7); */
 }
 
 .main-nav li {
-  text-align: center;
+  text-align: right;
   margin: 15px auto;
 }
 
@@ -47,7 +47,7 @@ body {
   top: 27px;
   right: 20px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   font-size: 30px;
 }
 
