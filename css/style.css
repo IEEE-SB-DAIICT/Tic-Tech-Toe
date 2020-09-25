@@ -567,28 +567,37 @@ footer {
   /* display: flex; */
   /* flex-direction: column; */
   /* justify-content: flex-end; */
-  align-items: center;
-  height: 35vh;
-  font-size: 1.5rem;
-  background-color: #212529;
+  /*align-items: center;*/
+ /* height: 35vh; */
+  background-color: #212f3c;
+  color:white;
+  text-align:center;
+  letter-spacing: 2.5px;
 }
 
-footer h4 {
-  padding: 15px;
-  color: white;
+footer a{
+  color:#fff
 }
 
-footer h4 i {
-  color: blue;
+.contact-numbers{
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-footer h4 a {
-  color: white;
-  text-decoration: none;
+.contact-numbers a{
+  text-decoration:none;
 }
 
-.footer-contact {
+.other-contacts{
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.footer-heading {
   /* display: flex; */
+  font-size: 1.5rem;
   text-align: center;
 }
 
