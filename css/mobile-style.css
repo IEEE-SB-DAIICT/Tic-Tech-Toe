@@ -525,7 +525,7 @@
   }
 
   footer {
-    height: 30vh;
+    /* height: 30vh; */
     font-size: 0.9rem;
     background-color: #212529;
   }
