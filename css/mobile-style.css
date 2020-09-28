@@ -462,12 +462,12 @@
   }
 
   .sponsors-section {
-    margin-top: 100px;
-    height: 100vh;
+    /*margin-top: 100px;
+      height: 100vh; */
   }
 
   .sponsors-section-section {
-    height: 100vh;
+   /* height: 100vh; */
     width: 95%;
     font-size: 1rem;
   }
@@ -478,7 +478,7 @@
   }
 
   .sponsors-list {
-    height: 120vh;
+    /* height: 120vh; */
   }
 
   .sponsors-list-list {
@@ -506,7 +506,7 @@
   }
 
   .faq-section {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .faq-section-section {
