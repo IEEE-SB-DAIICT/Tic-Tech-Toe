@@ -488,11 +488,11 @@ body {
 .sponsors-section-section {
   display: flex;
  /* height: 100vh; */
-  width: 80%;
+  width: 60%;
   flex-direction: column;
   align-items: center;
   font-size: 1.5rem;
-  background-color: #eeeeee;
+ /*background-color: #eeeeee;*/
 }
 
 .sponsors {
@@ -510,7 +510,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 60vh;
+  /* height: 60vh; */
   width: 100%;
   background-color: lightgray;
 }
@@ -583,7 +583,7 @@ footer {
 }
 
 footer a{
-  color:#fff
+  color:yellow
 }
 
 .contact-numbers{
@@ -626,7 +626,7 @@ footer h4 a span {
     #c471ed,
     #12c2e9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: url("../assets/bg3.png") fixed center center;
+  background: url("../assets/bg2.png") fixed center center;
 }
 
 .card-themes {
@@ -643,7 +643,7 @@ footer h4 a span {
     #86a8e7,
     #7f7fd5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: url("../assets/bg3.png") fixed center center;
+  background: url("../assets/bg2.png") fixed center center;
 }
 
 .card-teams {
@@ -658,7 +658,7 @@ footer h4 a span {
     #0575e6,
     #00f260
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: url("../assets/bg3.png") fixed center center;
+  background: url("../assets/bg2.png") fixed center center;
 }
 
 .card-food {
