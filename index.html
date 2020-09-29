@@ -63,7 +63,7 @@
         </label>
         <!-- <a href="#" class="hacklogo">Tic Tech Toe</a> -->
         <a href="#" class="hacklogo"><img src="./assets/TicTechToeBGless.png" width="200px" /></a>
-        <input type="checkbox" id="chkToggle" />
+        <input type="checkbox" id="chkToggle" onclick="navClicked()" />
         <ul class="main-nav" id="js-menu">
           <li>
             <a href="#about-section" class="nav-links">About</a>
@@ -72,7 +72,7 @@
             <a href="#themes-section" class="nav-links">Themes</a>
           </li>
           <li>
-            <a href="#schedule-section" class="nav-links">Schedule</a>
+            <a href="#event-schedule-title" class="nav-links">Schedule</a>
           </li>
           <li>
             <a href="#sponsors-section" class="nav-links">Sponsors</a>
@@ -210,7 +210,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <div class="event-schedule">
+    <div class="event-schedule" id="event-schedule-title">
       <h1 class="animated flip delay-2s" style="font-size: 36px;font-family:panton black caps;font-weight: bold;" >Event Schedule_</h1>
     </div>
     <section id="schedule-section" class="section schedule-section">
@@ -490,6 +490,18 @@
           });
       };
     });
+  </script>
+  <script>
+    function navClicked(){
+      if(document.getElementById("chkToggle").checked){
+        // document.getElementsByTagName("canvas")[0].style.position = "absolute";
+        // document.getElementsByTagName("canvas")[0].style.top = "-300px";
+      }
+      else{
+        // document.getElementsByTagName("canvas")[0].style.position = "relative";
+        // document.getElementsByTagName("canvas")[0].style.top = "0";
+      }
+    }
   </script>
 </body>
 </html>
