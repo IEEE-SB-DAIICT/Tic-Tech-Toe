@@ -10,7 +10,9 @@
     position: relative;
   }
 
-  .particles {
+  #particles-js
+  {
+    height:100vh;
   }
 
   .tictech {
@@ -295,6 +297,41 @@
     background-color: #eeeeee;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
   }
+
+#theme1
+{
+    width: 210px;
+    height: 220px;
+    margin: 8px;
+}
+  
+#theme2
+{
+  width: 210px;
+  height: 220px;
+  margin: 8px;
+}
+  
+ #theme3
+ {
+   width: 210px;
+   height: 220px;
+   margin: 8px;
+ }
+  
+#theme4
+{
+  width: 210px;
+  height: 220px;
+  margin: 8px;
+}
+  
+#theme5
+{
+  width: 210px;
+  height: 220px;
+  margin: 8px;
+}
 
   .event-schedule {
     display: flex;

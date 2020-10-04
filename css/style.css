@@ -289,6 +289,28 @@ body {
   font-family: Panton Black Caps;
   margin-bottom: 40px;
 }
+#theme1
+{
+  margin-left: 9%; 
+  margin-bottom:5%;
+}
+#theme2
+{
+  margin-bottom:5%;
+}
+#theme3
+{
+  margin-right: 9%; 
+  margin-bottom:5%;
+}
+#theme4
+{
+  margin-left: 20%;
+}
+#theme5
+{
+  margin-right: 20%;
+}
 
 .theme-cards {
   display: flex;
@@ -594,7 +616,7 @@ footer {
 }
 
 footer a{
-  color:yellow
+  color:whitesmoke;
 }
 
 .contact-numbers{
