@@ -136,7 +136,7 @@ body {
 
 .countdown li {
   display: inline-block;
-  font-size: 25px;
+  font-size: 50px;
   list-style-type: none;
   padding: 0px 25px;
   text-transform: uppercase;
@@ -145,7 +145,7 @@ body {
 
 .countdown li span {
   display: block;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .about-section {
@@ -204,15 +204,15 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
   font-family: Poppins
   font-weight: 600;
-  width: 350px;
-  height: 75px;
+  width: 700px;
+  height: 135px;
   /* margin: 20px; */
   margin-bottom: 0;
   border-radius: 2%;
-  border: 1px lightgray solid;
+  border: 3px grey solid;
   background: linear-gradient(to right, #36d1dc, #5b86e5);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   background: url("../assets/bg2.png") fixed center center;
