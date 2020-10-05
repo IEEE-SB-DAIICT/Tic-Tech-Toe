@@ -121,6 +121,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   height: 100%;
+  font-family:Poppins;
   /* margin-top:7%; */
   /* color: white; */
 }
@@ -165,7 +166,7 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /*align-items: center; */
   font-size: 1.5rem;
   /* height: 140vh; */
 }
@@ -204,6 +205,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 20px;
+  font-family: Poppins
   font-weight: 600;
   width: 350px;
   height: 75px;
@@ -214,6 +216,7 @@ body {
   background: linear-gradient(to right, #36d1dc, #5b86e5);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   background: url("../assets/bg2.png") fixed center center;
+  
 }
 
 .cards {
@@ -222,6 +225,7 @@ body {
   justify-content: space-evenly;
   margin-top: 40px;
   max-width: 100%;
+  font-family: Poppins;
 }
 
 .card {
@@ -274,13 +278,38 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   font-size: 1.5rem;
+  width:100%;
+  height:100%;
+}
 }
 
 .themes-section h1 {
   font-family: Poppins;
   margin-bottom: 40px;
+}
+#theme1
+{
+  margin-left: 9%; 
+  margin-bottom:5%;
+}
+#theme2
+{
+  margin-bottom:5%;
+}
+#theme3
+{
+  margin-right: 9%; 
+  margin-bottom:5%;
+}
+#theme4
+{
+  margin-left: 20%;
+}
+#theme5
+{
+  margin-right: 20%;
 }
 
 .theme-cards {
@@ -291,15 +320,16 @@ body {
 }
 
 .theme-card {
-  width: 300px; 
+  width: 23%; 
+  height:100%;
  /* min-width: 250px; */
   height: 300px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: Poppins;
   border-radius: 2%;
   border: 1.5px lightgray solid;
   background-color: #eeeeee;
@@ -340,6 +370,7 @@ body {
   /* height: 80vh; */
   /* width: 80%; */
   background-color: white;
+  font-family: Popppins;
 }
 .section-1 {
   width: 50%;
@@ -541,6 +572,7 @@ body {
 .faq-section {
   display: flex;
   justify-content: center;
+  font-family: Poppins;
 }
 
 .faq-section-section {
@@ -584,7 +616,7 @@ footer {
 }
 
 footer a{
-  color:yellow
+  color:whitesmoke;
 }
 
 .contact-numbers{
@@ -798,7 +830,7 @@ td:last-child {
 }
 
 /* Bob */
-@-webkit-keyframes hvr-bob {
+/*@-webkit-keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-16px);
     transform: translateY(-16px);
@@ -839,7 +871,7 @@ td:last-child {
   }
 }
 .hvr-bob {
-  /* display: inline-block; */
+  /* display: inline-block; 
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -860,4 +892,4 @@ td:last-child {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
-}
+}*/

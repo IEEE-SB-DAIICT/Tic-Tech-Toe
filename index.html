@@ -65,23 +65,23 @@
         <a href="#" class="hacklogo"><img src="./assets/TicTechToeBGless.png" width="200px" /></a>
         <input type="checkbox" id="chkToggle" onclick="navClicked()" />
         <ul class="main-nav" id="js-menu">
-          <li>
+          <li style="font-family:Poppins;">
             <a href="#about-section" class="nav-links">About</a>
           </li>
-          <li>
+          <li style="font-family:Poppins;">
             <a href="#themes-section" class="nav-links">Themes</a>
           </li>
-          <li>
+          <li style="font-family:Poppins;">
             <a href="#event-schedule-title" class="nav-links">Schedule</a>
           </li>
-          <li>
+          <li style="font-family:Poppins;">
             <a href="#sponsors-section" class="nav-links">Sponsors</a>
           </li>
 
           <!--<li>
             <a href="#mentors-section" class="nav-links"> Mentors</a>
           </li>-->
-          <li>
+          <li style="font-family:Poppins">
             <a href="#faq-section" class="nav-links">FAQs</a>
           </li>
         </ul>
@@ -91,18 +91,20 @@
         <img src="assets/TicTechToeBGless.png" />
         <h5>Get ready to HACK your way <br> through naughts and crosses</h5> 
         <h5>
-          Organised by I.FEST AND WIE <br />
-          DAIICT Gandhinagar.
+          Organised by i.Fest and <br>
+          WIE Affinity Group,<br>
+          DA-IICT, Gandhinagar
         </h5>
+        <a href="https://tic-tech-toe.devfolio.co" style="text-decoration: none;">
         <button id="devfolio-apply-now">
           <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46"
-            style="height: 24px; width: 24px; margin-right: 8px">
+            style="font-family:Panton Black Caps;height: 24px; width: 24px; margin-right: 8px">
             <path
               d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
             <path
               d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z" />
             </svg>Apply with Devfolio
-        </button>
+        </button></a>
         <div class="icons">
           <!-- <a href="https://www.linkedin.com/company/"
               ><i class="fab fa-linkedin"></i
@@ -116,7 +118,7 @@
           <a href="http://ieee.daiict.ac.in" target="_blank"><i class="fa fa-link"></i></a>
         </div>
       </div>
-      <div class="illustration animated slideInRight">
+      <div class="illustration animated slideInRight" >
         <img class="hero-img" width="600px" src="./assets/a1-1.svg" class="" alt="" />
       </div>
     </div>
@@ -124,7 +126,7 @@
 
   <div class="timer"> 
     <div class="highlights">
-      <h1 class="animated flip delay-2s" style="font-family:panton black caps;font-weight: bold;">Hackathon Starts in</h1>
+      <h1 class="animated flip delay-2s" style="font-weight: bold;">Hackathon Starts in</h1>
       <div class="container">
         <ul class="countdown">
           <li><span id="days"></span>days</li>
@@ -156,7 +158,7 @@
         </div>
         <div class="hvr-outline-out hvr-bob card card-themes">
           <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
-          <h3>9 Themes</h3>
+          <h3>5 Themes</h3>
         </div>
         <div class="hvr-outline-out hvr-bob card card-teams">
           <i class="fas fa-users animated bounceIn delay-2s"></i>
@@ -168,9 +170,9 @@
     <!-- Info section - new cards -->
 
     <section id="themes-section" class="section themes-section">
-      <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;font-family:panton black caps;" >Themes</h1>
+      <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;font-family:panton black caps;text-align: center;margin-top:3%;margin-bottom:5%" >Themes</h1>
       <div class="theme-cards">
-        <div class="theme-card card-clock hvr-outline-out hvr-bob">
+        <!--<div class="theme-card card-clock hvr-outline-out hvr-bob">
           <i class="fas fa-cubes animated bounceIn delay-2s"></i>
           <h3>Blockchain</h3>
         </div>
@@ -181,37 +183,37 @@
         <div class="theme-card card-teams hvr-outline-out hvr-bob">
           <i class="fas fa-network-wired animated bounceIn delay-2s"></i>
           <h3>Web/App development</h3>
+        </div>-->
+        <div id="theme1" class="theme-card card-teams hvr-outline-out hvr-bob">
+          <i class="fas fa-user-shield animated bounceIn delay-2s"></i>
+          <h3>Women in Safety</h3>
         </div>
-        <div class="theme-card card-clock hvr-outline-out hvr-bob">
+        <div id="theme2" class="theme-card card-clock hvr-outline-out hvr-bob">
           <i class="fas fa-users animated bounceIn delay-2s"></i>
-          <h3>Cyber security</h3>
+          <h3>Cyber Security</h3>
         </div>
-        <div class="theme-card card-themes hvr-outline-out hvr-bob">
+        <div id="theme3" class="theme-card card-themes hvr-outline-out hvr-bob">
           <i class="fas fa-robot animated bounceIn delay-2s"></i>
-          <h3>AI/ML</h3>
+          <h3>Edu-Tech</h3>
         </div>
-        <div class="theme-card card-teams hvr-outline-out hvr-bob">
+        <div id="theme4" class="theme-card card-teams hvr-outline-out hvr-bob">
           <i class="fas fa-money-check-alt animated bounceIn delay-2s"></i>
           <h3>Fin-Tech</h3>
         </div>
-        <div class="theme-card card-teams hvr-outline-out hvr-bob">
+        <div id="theme5" class="theme-card card-teams hvr-outline-out hvr-bob">
           <i class="fas fa-heartbeat animated bounceIn delay-2s"></i>
           <h3>Health Care</h3>
         </div>
-        <div class="theme-card card-teams hvr-outline-out hvr-bob">
-          <i class="fas fa-user-shield animated bounceIn delay-2s"></i>
-          <h3>Women in safety</h3>
-        </div>
-        <div class="theme-card card-teams hvr-outline-out hvr-bob">
+        <!--<div class="theme-card card-teams hvr-outline-out hvr-bob">
           <i class="fas fa-vr-cardboard animated bounceIn delay-2s"></i>
           <h3>AR/VR</h3>
-        </div>
+        </div>-->
       </div>
     </section>
 
     <!-- Schedule Section -->
     <div class="event-schedule" id="event-schedule-title">
-      <h1 class="animated flip delay-2s" style="font-size: 36px;font-family:panton black caps;font-weight: bold;" >Event Schedule_</h1>
+      <h1 class="animated flip delay-2s" style="font-size: 36px;font-weight: bold;margin-top:-2%;" >Event Schedule</h1>
     </div>
     <section id="schedule-section" class="section schedule-section">
       <div class="schedule-section-section">
@@ -326,28 +328,28 @@
     <section id="sponsors-section" class="section sponsors-section">
       <div class="sponsors-section-section">
         <div class="sponsors">
-          <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;font-family:panton black caps;">Our Sponsors_</h1>
+          <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;">Our Sponsors</h1>
         </div>  <br>
         <div class="sponsors-list">
           <div class="sponsors-list-list">
             <h5>Gold Sponsor</h5>
-            <a href="https://devfolio.co">
+            <a href="https://devfolio.co" style="text-decoration: none;">
               <img src="./assets/dev.png" width="200px" class="" alt="" /></a>
           </div>
           <div class="sponsors-list-list">
-            <h5>Silver Sponsors</h5>
+            <h5">Silver Sponsors</h5>
             <div class="sponsors-list-img">
-            <a href="https://matic.network">
+            <a href="https://matic.network" style="text-decoration: none;">
               <img src="./assets/matic2.png" width="220px" class="" alt="" />
             </a>
             &nbsp;&nbsp;
            <!-- <div class="padd"></div> -->
-            <a href="https://fold.money">
+            <a href="https://fold.money" style="text-decoration: none;">
               <img src="./assets/fold.svg" width="120px" class="" alt="" />
             </a>
             &nbsp;&nbsp;
             <a href="https://www.portis.io/">
-              <img src="./assets/portis.png" width="120px" class="" alt=""  />
+              <img src="./assets/portis_logo.svg" width="120px" class="" alt=""  />
             </a>
             </div>
           </div> 
@@ -375,11 +377,11 @@
       <div class="container">
         <div class="accordion">
           <div>
-            <h1 class="animated flip delay-2s" style="font-size: 36px;font-family:panton black caps;font-weight: bold;">FAQs</h1>
+            <h1 class="animated flip delay-2s" style="font-size: 36px;font-family:Poppins;font-weight: bold;">FAQs</h1>
           </div> <br><br><br>
           <div class="accordion-item">
-            <button id="accordion-button-1" aria-expanded="false">
-              <span class="accordion-title">How can we apply for the Hackathon?</span><span class="icon"
+            <button id="accordion-button-1" aria-expanded="false" style="font-family:Poppins;">
+              <span class="accordion-title" >How can we apply for the Hackathon?</span><span class="icon"
                 aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
@@ -387,7 +389,7 @@
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-1" aria-expanded="false">
+            <button id="accordion-button-1" aria-expanded="false" style="font-family:Poppins;">
               <span class="accordion-title">What should be the team size?</span><span class="icon"
                 aria-hidden="true"></span>
             </button>
@@ -396,16 +398,16 @@
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-2" aria-expanded="false">
+            <button id="accordion-button-2" aria-expanded="false" style="font-family:Poppins;">
               <span class="accordion-title">Will teams be assigned or do we have to select the team?</span><span class="icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
-              <p>This hackathon would require great team work so we expect you to come up with your friends/colleagues to bring out the best in you. You can not apply individually..</p>
+              <p>This hackathon would require great team work so we expect you to come up with your friends/colleagues to bring out the best in you. You can not apply individually.</p>
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-3" aria-expanded="false">
-              <span class="accordion-title">When is the event?</span><span class="icon" aria-hidden="true"></span>
+            <button id="accordion-button-3" aria-expanded="false" style="font-family:Poppins;">
+              <span class="accordion-title" >When is the event?</span><span class="icon" aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
               <p>
@@ -415,7 +417,7 @@
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-4" aria-expanded="false">
+            <button id="accordion-button-4" aria-expanded="false" style="font-family:Poppins;">
               <span class="accordion-title">What is the registration fee?</span><span class="icon"
                 aria-hidden="true"></span>
             </button>
@@ -424,8 +426,8 @@
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-5" aria-expanded="false">
-              <span class="accordion-title">What is the criteria for shortlisting the teams?</span><span class="icon"
+            <button id="accordion-button-5" aria-expanded="false" style="font-family:Poppins;">
+              <span class="accordion-title" >What is the criteria for shortlisting the teams?</span><span class="icon"
                 aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
@@ -436,8 +438,8 @@
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-5" aria-expanded="false">
-              <span class="accordion-title">What is the eligibility criteria?</span><span class="icon"
+            <button id="accordion-button-5" aria-expanded="false" style="font-family:Poppins;">
+              <span class="accordion-title" >What is the eligibility criteria?</span><span class="icon"
                 aria-hidden="true"></span>
             </button>
             <div class="accordion-content">
@@ -449,14 +451,14 @@
     </section>
   </div>
   <footer id="footer" class="footer">
-    <h1 style="font-size: 36px;font-family:panton black caps ;font-weight: bold;letter-spacing: 5px;">Get in Touch With Us </h1>
+    <h1 style="font-size: 36px;font-weight: bold;letter-spacing: 5px;">Get in Touch With Us </h1>
     <div class="contact-numbers">
       <a href="tel:+91-9714533000">Devanshu Vithlani: 9714533000</a> <br>
       <a href="tel:+91-9427772012">Madhavendra Choksi: 9427772012</a> <br>
       <a href="tel:+91-6354855612">Vishwa Shah: 6354855612</a>
     </div>
     <div class="other-contacts">
-      <a  href="http://ifest.daiict.ac.in/"> ifest@daiict.ac.in </p> </a>
+      <a  href="mailto:tictechtoe20.daiict@gmail.com"> tictechtoe20.daiict@gmail.com </p> </a>
     </div>
     <br><br>
     <p> © Copyright 2020 - IEEE SB DAIICT</p>
@@ -504,4 +506,4 @@
     }
   </script>
 </body>
-</html>
+</html> 
