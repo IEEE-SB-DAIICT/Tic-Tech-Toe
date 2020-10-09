@@ -260,6 +260,43 @@ body {
   border: 3px lightgray solid;
 }
 
+
+/* i-fest + WIE description */
+.section-container .desc-ifest, .section-container .desc-wie{
+  /* display: flex; */
+  /* justify-content: center; */
+  align-content: center;
+  vertical-align:middle;
+  max-width: 80%;
+}
+.section-container .desc-ifest p, .section-container .desc-wie p{
+  text-align: center;
+  padding: 10px;
+}
+.section-container .desc-ifest h3, .section-container .desc-wie h3{
+  text-align: center;
+  padding: 1rem;
+}
+.section-container .desc-wie img{
+  width: 20rem;
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-container .desc-ifest img{
+  width: 10rem;
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.section-container .desc-ifest{
+  margin-top: 20px;
+}
+
 .schedule-section {
   /* position: relative; */
   position: inherit;

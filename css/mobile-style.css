@@ -247,6 +247,10 @@
     border: 3px lightgray solid;
   }
 
+  .section-container .desc-wie img, .section-container .desc-ifest img{
+    max-width: 50%;
+  }
+
   .schedule-section {
     /* height: 110vh; */
     margin-bottom: 00px;
