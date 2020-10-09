@@ -262,16 +262,29 @@ body {
 
 
 /* i-fest + WIE description */
+.ifest-wie-container{
+  /* background: url("../assets/bg2.png") fixed center center; */
+  display: flex;
+  max-width: 80%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+
 .section-container .desc-ifest, .section-container .desc-wie{
   /* display: flex; */
   /* justify-content: center; */
   align-content: center;
   vertical-align:middle;
   max-width: 80%;
+  /* border: 2px solid black; */
 }
 .section-container .desc-ifest p, .section-container .desc-wie p{
   text-align: center;
   padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
 }
 .section-container .desc-ifest h3, .section-container .desc-wie h3{
   text-align: center;
@@ -293,8 +306,36 @@ body {
   margin-bottom: 30px;
 }
 
-.section-container .desc-ifest{
-  margin-top: 20px;
+@media screen and (min-width: 1260px) {
+  .section-container .desc-ifest, .section-container .desc-wie{
+    /* display: flex; */
+    /* justify-content: center; */
+    align-content: center;
+    vertical-align:middle;
+    max-width: 80%;
+  }
+  .section-container .desc-ifest{
+    margin-right: 20px;
+  }
+  .section-container .desc-wie{
+    margin-left: 20px;
+    width: 50%;
+  }
+  .section-container .desc-ifest{
+    /* margin-top: 20px; */
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1260px){
+  .section-container .desc-ifest{
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  .section-container .desc-wie{
+    margin-top: 20px;
+  }
 }
 
 .schedule-section {

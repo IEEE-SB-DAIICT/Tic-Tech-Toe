@@ -2,6 +2,21 @@
   .illustration {
     display: none;
   }
+  .ifest-wie-container{
+    /* background: url("../assets/bg2.png") fixed center center; */
+    display: contents;
+    max-width: 80%;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ifest-wie-container{
+    /* background: url("../assets/bg2.png") fixed center center; */
+    display: contents;
+    max-width: 80%;
+    align-content: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -249,6 +264,13 @@
 
   .section-container .desc-wie img, .section-container .desc-ifest img{
     max-width: 50%;
+  }
+
+  .ifest-wie-container{
+    /* background: url("../assets/bg2.png") fixed center center; */
+    display: contents;
+    max-width: 80%;
+    align-content: center;
   }
 
   .schedule-section {
