@@ -1,195 +1,276 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162398295-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162398295-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag('config', 'UA-162398295-3');
+    </script>
 
-    gtag('config', 'UA-162398295-3');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tech Toe</title>
+    <meta
+      name="keywords"
+      content="Tic Tech Toe, IEEE Student Branch DAIICT, DAIICT, Hackathon"
+    />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tic Tech Toe</title>
-  <meta name="keywords" content="Tic Tech Toe, IEEE Student Branch DAIICT, DAIICT, Hackathon" />
+    <meta name="title" content="Tic Tech Toe" />
+    <meta name="description" content="Tic Tech Toe, IEEE SB DAIICT" />
+    <meta name="author" href="" content="Meet Patel, Hitesh Goyal" />
 
-  <meta name="title" content="Tic Tech Toe" />
-  <meta name="description" content="Tic Tech Toe, IEEE SB DAIICT" />
-  <meta name="author" href="" content="Meet Patel, Hitesh Goyal" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://ieee.daiict.ac.in" />
+    <meta property="og:site_name" content="Tic Tech Toe" />
+    <meta property="og:title" content="Tic Tech Toe" />
+    <meta property="og:description" content="Tic Tech Toe, IEEE SB DAIICT" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://     ******** /logo.png"
+    />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://ieee.daiict.ac.in" />
-  <meta property="og:site_name" content="Tic Tech Toe" />
-  <meta property="og:title" content="Tic Tech Toe" />
-  <meta property="og:description" content="Tic Tech Toe, IEEE SB DAIICT" />
-  <meta property="og:image" itemprop="image" content="https://     ******** /logo.png" />
+    <title>Tic Tech Toe</title>
 
-  <title>Tic Tech Toe</title>
+    <!-- Logo on browser tab -->
+    <link rel="icon" href="assets/logo.png" />
 
-  <!-- Logo on browser tab -->
-  <link rel="icon" href="assets/logo.png" />
+    <!-- font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
-  <!-- font awesome for icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <!--css files-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile-style.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/faqs.css" />
 
-  <!--css files-->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/mobile-style.css" />
-  <link rel="stylesheet" href="css/particles.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/faqs.css" />
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Poppins|Roboto|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!--google fonts-->
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Poppins|Roboto|Source+Sans+Pro&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- Header -->
+    <header id="hero-section" class="section hero-section">
+      <div id="particles-js" class="particles">
+        <nav class="navbar">
+          <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+            <i class="fa fa-bars"></i>
+          </label>
+          <!-- <a href="#" class="hacklogo">Tic Tech Toe</a> -->
+          <a href="#" class="hacklogo"
+            ><img src="./assets/TicTechToeBGless.png" width="200px"
+          /></a>
+          <input type="checkbox" id="chkToggle" onclick="navClicked()" />
+          <ul class="main-nav" id="js-menu">
+            <li style="font-family: Poppins">
+              <a href="#about-section" class="nav-links">About</a>
+            </li>
+            <li style="font-family: Poppins">
+              <a href="#themes-section" class="nav-links">Themes</a>
+            </li>
+            <li style="font-family: Poppins">
+              <a href="#event-schedule-title" class="nav-links">Schedule</a>
+            </li>
+            <li style="font-family: Poppins">
+              <a href="#sponsors-section" class="nav-links">Sponsors</a>
+            </li>
 
-<body>
-  <!-- Header -->
-  <header id="hero-section" class="section hero-section"> 
-    <div id="particles-js" class="particles">
-      <nav class="navbar">
-        <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-          <i class="fa fa-bars"></i>
-        </label>
-        <!-- <a href="#" class="hacklogo">Tic Tech Toe</a> -->
-        <a href="#" class="hacklogo"><img src="./assets/TicTechToeBGless.png" width="200px" /></a>
-        <input type="checkbox" id="chkToggle" onclick="navClicked()" />
-        <ul class="main-nav" id="js-menu">
-          <li style="font-family:Poppins;">
-            <a href="#about-section" class="nav-links">About</a>
-          </li>
-          <li style="font-family:Poppins;">
-            <a href="#themes-section" class="nav-links">Themes</a>
-          </li>
-          <li style="font-family:Poppins;">
-            <a href="#event-schedule-title" class="nav-links">Schedule</a>
-          </li>
-          <li style="font-family:Poppins;">
-            <a href="#sponsors-section" class="nav-links">Sponsors</a>
-          </li>
-
-          <!--<li>
+            <!--<li>
             <a href="#mentors-section" class="nav-links"> Mentors</a>
           </li>-->
-          <li style="font-family:Poppins">
-            <a href="#faq-section" class="nav-links">FAQs</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="tictech">
-        <!-- <h1 class="animated flipInX">Tic Tech Toe</h1> -->
-        <img src="assets/TicTechToeBGless.png" />
-        <h5>Get ready to HACK your way <br> through naughts and crosses</h5> 
-        <h5>
-          Organised by i.Fest and <br>
-          WIE Affinity Group,<br>
-          DA-IICT, Gandhinagar
-        </h5>
-        <a href="https://tic-tech-toe.devfolio.co" style="text-decoration: none;">
-        <button id="devfolio-apply-now">
-          <svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46"
-            style="font-family:Panton Black Caps;height: 24px; width: 24px; margin-right: 8px">
-            <path
-              d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
-            <path
-              d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z" />
-            </svg>Apply with Devfolio
-        </button></a>
-        <div class="icons">
-          <!-- <a href="https://www.linkedin.com/company/"
-              ><i class="fab fa-linkedin"></i
-            ></a> -->
-          <!-- <a href="https://github.com/"
-              ><i class="fab fa-github"></i
-            ></a> -->
-          <a href="https://www.facebook.com/ieeesbdaiict/"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.instagram.com/i.fest/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/channel/UC6W55GI1uB5us0sMMvryb3A"><i class="fab fa-youtube"></i></a>
-          <a href="http://ieee.daiict.ac.in" target="_blank"><i class="fa fa-link"></i></a>
+            <li style="font-family: Poppins">
+              <a href="#faq-section" class="nav-links">FAQs</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="tictech">
+          <!-- <h1 class="animated flipInX">Tic Tech Toe</h1> -->
+          <img src="assets/TicTechToeBGless.png" />
+          <h5>
+            Get ready to HACK your way <br />
+            through naughts and crosses
+          </h5>
+          <h5>
+            Organised by i.Fest and <br />
+            WIE Affinity Group,<br />
+            DA-IICT, Gandhinagar
+          </h5>
+          <a
+            href="https://tic-tech-toe.devfolio.co"
+            style="text-decoration: none"
+          >
+            <button id="devfolio-apply-now">
+              <svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 115.46 123.46"
+                style="
+                  font-family: Panton Black Caps;
+                  height: 24px;
+                  width: 24px;
+                  margin-right: 8px;
+                "
+              >
+                <path
+                  d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z"
+                />
+                <path
+                  d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"
+                />
+                Apply with Devfolio
+              </svg>
+            </button></a
+          >
+          <div class="icons">
+            <a href="https://www.facebook.com/ieeesbdaiict/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/i.fest/?hl=en"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UC6W55GI1uB5us0sMMvryb3A"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="http://ieee.daiict.ac.in" target="_blank"
+              ><i class="fa fa-link"></i
+            ></a>
+          </div>
+        </div>
+        <div class="illustration animated slideInRight">
+          <img
+            class="hero-img"
+            width="600px"
+            src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/a1-1.svg"
+            class=""
+            alt=""
+          />
         </div>
       </div>
-      <div class="illustration animated slideInRight" >
-        <img class="hero-img" width="600px" src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/a1-1.svg" class="" alt="" />
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="timer"> 
-    <div class="highlights">
-      <h1 class="animated flip delay-2s" style="font-weight: bold;">Hackathon Starts in</h1>
-      <div class="container">
-        <ul class="countdown">
-          <li><span id="days"></span>days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li><span id="seconds"></span>Seconds</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="section-container">
-    <!-- About Section -->
-    <section id="about-section" class="section about-section">
-
-      <div class="prize">
-        <div class="hvr-outline-out prize-card">
-          Prizes Worth <br />
-          ₹ 2 lac
+    <div class="timer">
+      <div class="highlights">
+        <h1 class="animated flip delay-2s" style="font-weight: bold">
+          Hackathon Starts in
+        </h1>
+        <div class="container">
+          <ul class="countdown">
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
         </div>
-        <!-- <div class="prize-card">
+      </div>
+    </div>
+    <div class="section-container">
+      <!-- About Section -->
+      <section id="about-section" class="section about-section">
+        <div class="prize">
+          <div class="hvr-outline-out prize-card">
+            Prizes Worth <br />
+            ₹ 2 lac
+          </div>
+          <!-- <div class="prize-card">
           Matic Prize <br />
           Rs.10000
         </div> -->
-      </div>
-      
-      <div class="ifest-wie-container">
-        <div class="desc-ifest card-themes hvr-outline-out">
-          <p><h3>i.Fest</h3></p>
-          <img src="./assets/i.Fest_logo_new.png" alt="">
-          <p><strong>i.Fest,</strong> is the largest technical fest of Gujarat.</p>
-          <p>Over 20 events are organised, where established personalities are invited from every industry to interact and provide endeavouring insights to young minds. The focus is on bridging the gap between industries and budding engineers and the aim has been successfully accomplished for over a decade now.</p>
         </div>
-  
-        <div class="desc-wie card-themes hvr-outline-out">
-          <p><h3>IEEE Women in Engineering Affinity Group (WIE)</h3></p>
-          <img src="https://ieee-sb-daiict.github.io/ieee-2020/img/chapters/wie.png" alt="">
-          <p> <strong>IEEE WIE</strong> is the largest international professional group dedicated to provide the young women with a platform and inspire them to come up with excellence in the field of Engineering.</p>
-          <p>Through <strong>Tic Tech Toe, WIE DA-IICT</strong> aims to promote women participation and encourage them to hone their technical skills.</p>
-        </div>
-      </div>
 
-      <div class="cards">
-        <div class="hvr-outline-out hvr-bob card card-clock">
-          <i class="far fa-clock animated bounceIn delay-2s"></i>
-          <h3>36hrs</h3>
-        </div>
-        <div class="hvr-outline-out hvr-bob card card-themes">
-          <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
-          <h3>5 Themes</h3>
-        </div>
-        <div class="hvr-outline-out hvr-bob card card-teams">
-          <i class="fas fa-users animated bounceIn delay-2s"></i>
-          <h3>50 Teams</h3>
-        </div>
-      </div>
-    </section>
+        <div class="ifest-wie-container">
+          <div class="desc-ifest card-themes hvr-outline-out">
+            <h3>i.Fest</h3>
+            <img src="./assets/i.Fest_logo_new.png" alt="" />
+            <p>
+              <strong>i.Fest,</strong> is the largest technical fest of Gujarat.
+            </p>
+            <p>
+              Over 20 events are organised, where established personalities are
+              invited from every industry to interact and provide endeavouring
+              insights to young minds. The focus is on bridging the gap between
+              industries and budding engineers and the aim has been successfully
+              accomplished for over a decade now.
+            </p>
+          </div>
 
-    <!-- Info section - new cards -->
+          <div class="desc-wie card-themes hvr-outline-out">
+            <h3>IEEE Women in Engineering Affinity Group (WIE)</h3>
+            <img
+              src="https://ieee-sb-daiict.github.io/ieee-2020/img/chapters/wie.png"
+              alt=""
+            />
+            <p>
+              <strong>IEEE WIE</strong> is the largest international
+              professional group dedicated to provide the young women with a
+              platform and inspire them to come up with excellence in the field
+              of Engineering.
+            </p>
+            <p>
+              Through <strong>Tic Tech Toe, WIE DA-IICT</strong> aims to promote
+              women participation and encourage them to hone their technical
+              skills.
+            </p>
+          </div>
+        </div>
 
-    <section id="themes-section" class="section themes-section">
-      <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;font-family:panton black caps;text-align: center;margin-top:3%;margin-bottom:5%" >Themes</h1>
-      <div class="theme-cards">
-        <!--<div class="theme-card card-clock hvr-outline-out hvr-bob">
+        <div class="cards">
+          <div class="hvr-outline-out hvr-bob card card-clock">
+            <i class="far fa-clock animated bounceIn delay-2s"></i>
+            <h3>36hrs</h3>
+          </div>
+          <div class="hvr-outline-out hvr-bob card card-themes">
+            <i class="fas fa-laptop-code animated bounceIn delay-2s"></i>
+            <h3>5 Themes</h3>
+          </div>
+          <div class="hvr-outline-out hvr-bob card card-teams">
+            <i class="fas fa-users animated bounceIn delay-2s"></i>
+            <h3>50 Teams</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info section - new cards -->
+
+      <section id="themes-section" class="section themes-section">
+        <h1
+          class="animated flip delay-2s"
+          style="
+            font-weight: bold;
+            font-size: 36px;
+            font-family: panton black caps;
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: 5%;
+          "
+        >
+          Themes
+        </h1>
+        <div class="theme-cards">
+          <!--<div class="theme-card card-clock hvr-outline-out hvr-bob">
           <i class="fas fa-cubes animated bounceIn delay-2s"></i>
           <h3>Blockchain</h3>
         </div>
@@ -201,327 +282,432 @@
           <i class="fas fa-network-wired animated bounceIn delay-2s"></i>
           <h3>Web/App development</h3>
         </div>-->
-        <div id="theme1" class="theme-card card-teams hvr-outline-out hvr-bob">
-          <i class="fas fa-shield-alt animated bounceIn delay-2s"></i>
-          <h3>Cyber Security</h3>
+          <div
+            id="theme1"
+            class="theme-card card-teams hvr-outline-out hvr-bob"
+          >
+            <i class="fas fa-shield-alt animated bounceIn delay-2s"></i>
+            <h3>Cyber Security</h3>
+          </div>
+          <div
+            id="theme2"
+            class="theme-card card-clock hvr-outline-out hvr-bob"
+          >
+            <i class="fas fa-user-shield animated bounceIn delay-2s"></i>
+            <h3>Women Safety</h3>
+          </div>
+          <div
+            id="theme3"
+            class="theme-card card-themes hvr-outline-out hvr-bob"
+          >
+            <i class="fas fa-graduation-cap animated bounceIn delay-2s"></i>
+            <h3>Edu-Tech</h3>
+          </div>
+          <div
+            id="theme4"
+            class="theme-card card-teams hvr-outline-out hvr-bob"
+          >
+            <i class="fas fa-money-check-alt animated bounceIn delay-2s"></i>
+            <h3>Fin-Tech</h3>
+          </div>
+          <div
+            id="theme5"
+            class="theme-card card-teams hvr-outline-out hvr-bob"
+          >
+            <i class="fas fa-heartbeat animated bounceIn delay-2s"></i>
+            <h3>Health Care</h3>
+          </div>
         </div>
-        <div id="theme2" class="theme-card card-clock hvr-outline-out hvr-bob">
-          <i class="fas fa-user-shield animated bounceIn delay-2s"></i>
-          <h3>Women Safety</h3>
-        </div>
-        <div id="theme3" class="theme-card card-themes hvr-outline-out hvr-bob">
-          <i class="fas fa-graduation-cap animated bounceIn delay-2s"></i>
-          <h3>Edu-Tech</h3>
-        </div>
-        <div id="theme4" class="theme-card card-teams hvr-outline-out hvr-bob">
-          <i class="fas fa-money-check-alt animated bounceIn delay-2s"></i>
-          <h3>Fin-Tech</h3>
-        </div>
-        <div id="theme5" class="theme-card card-teams hvr-outline-out hvr-bob">
-          <i class="fas fa-heartbeat animated bounceIn delay-2s"></i>
-          <h3>Health Care</h3>
-        </div>
-        <!--<div class="theme-card card-teams hvr-outline-out hvr-bob">
-          <i class="fas fa-vr-cardboard animated bounceIn delay-2s"></i>
-          <h3>AR/VR</h3>
-        </div>-->
-      </div>
-    </section>
+      </section>
 
-    <!-- Schedule Section -->
-    <div class="event-schedule" id="event-schedule-title">
-      <h1 class="animated flip delay-2s" style="font-size: 36px;font-weight: bold;margin-top:-2%;" >Event Schedule</h1>
+      <!-- Schedule Section -->
+      <div class="event-schedule" id="event-schedule-title">
+        <h1
+          class="animated flip delay-2s"
+          style="font-size: 36px; font-weight: bold; margin-top: -2%"
+        >
+          Event Schedule
+        </h1>
+      </div>
+      <section id="schedule-section" class="section schedule-section">
+        <div class="schedule-section-section">
+          <div class="section-1" style="font-family: Poppins">
+            <h2 style="text-align: center">DAY 1</h2>
+            <table class="table-fill">
+              <tbody>
+                <tr>
+                  <td>10 AM</td>
+                  <td>
+                    Introduction to TicTechToe‘20 and Problem Statement
+                    Presentation
+                  </td>
+                </tr>
+                <tr>
+                  <td>10:30 AM</td>
+                  <td>
+                    Finalize the Problem Statements, Team Formation & Brainstorm
+                  </td>
+                </tr>
+                <tr>
+                  <td>12 Noon</td>
+                  <td>Eat. Code. Repeat 😋</td>
+                </tr>
+                <tr>
+                  <td>1 PM</td>
+                  <td>#HackTheXO Phase-1</td>
+                </tr>
+                <tr>
+                  <td>5 PM</td>
+                  <td>
+                    Submission of Phase-1 (Basic idea of what you are planning
+                    to do)
+                  </td>
+                </tr>
+                <tr>
+                  <td>6 PM</td>
+                  <td>Speakers Session</td>
+                </tr>
+                <tr>
+                  <td>7:30 PM</td>
+                  <td>
+                    Mentor’s Introduction to each team for #HackTheXO phases
+                  </td>
+                </tr>
+                <tr>
+                  <td>8 PM</td>
+                  <td>Dinner Break</td>
+                </tr>
+                <tr>
+                  <td>9 PM</td>
+                  <td>#HackTheXO Phase-2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="partition"></div>
+          <div class="section-2" style="font-family: Poppins">
+            <h2 style="text-align: center">DAY 2</h2>
+            <table class="table-fill">
+              <tbody>
+                <tr>
+                  <td>7 AM</td>
+                  <td>
+                    Submission of Phase-2 (Part Implemented till the end of
+                    Phase-2)
+                  </td>
+                </tr>
+                <tr>
+                  <td>8 AM <br /></td>
+                  <td>Breakfast Break</td>
+                </tr>
+                <tr>
+                  <td>9 AM</td>
+                  <td>#HackTheXO Phase-3</td>
+                </tr>
+                <tr>
+                  <td>12 Noon</td>
+                  <td>Lunch Break</td>
+                </tr>
+                <tr>
+                  <td>1 PM</td>
+                  <td>#HackTheXO Final Phase</td>
+                </tr>
+                <tr>
+                  <td>4 PM</td>
+                  <td>#HackTheXO Final Submission</td>
+                </tr>
+                <tr>
+                  <td>5 PM</td>
+                  <td>Sell your Product - #HackTheXO</td>
+                </tr>
+                <tr>
+                  <td>8 PM</td>
+                  <td>Dinner Break</td>
+                </tr>
+                <tr>
+                  <td>9 PM</td>
+                  <td>Result Declaration & Closing Ceremony</td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-bottom: 30px !important;
+                      padding-top: 25px !important;
+                    "
+                  >
+                    10 PM
+                  </td>
+                  <td>#HackTheXO concludes, see you next year!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsors-section" class="section sponsors-section">
+        <div class="sponsors-section-section">
+          <div class="sponsors">
+            <h1
+              class="animated flip delay-2s"
+              style="font-weight: bold; font-size: 36px"
+            >
+              Our Sponsors
+            </h1>
+          </div>
+          <br />
+          <div class="sponsors-list">
+            <div class="sponsors-list-list">
+              <h5>Gold Sponsor</h5>
+              <a href="https://devfolio.co" style="text-decoration: none">
+                <img src="./assets/dev.png" width="200px" class="" alt=""
+              /></a>
+            </div>
+            <div class="sponsors-list-list">
+              <h5>Silver Sponsors</h5>
+              <div class="sponsors-list-img">
+                <a href="https://matic.network" style="text-decoration: none">
+                  <img
+                    src="./assets/matic2.png"
+                    width="220px"
+                    class=""
+                    alt=""
+                  />
+                </a>
+                &nbsp;&nbsp;
+                <!-- <div class="padd"></div> -->
+                <a href="https://fold.money" style="text-decoration: none">
+                  <img
+                    src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/fold.svg"
+                    width="120px"
+                    class=""
+                    alt=""
+                  />
+                </a>
+                &nbsp;&nbsp;
+                <a href="https://www.portis.io/">
+                  <img
+                    src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/portis_logo.svg"
+                    width="120px"
+                    class=""
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="sponsors-list-list">
+              <div class="sponsors-list-img">
+                <a href="https://www.echoar.xyz/" style="text-decoration: none">
+                  <img
+                    src="./assets/echoAR-Logo2020-Dark.png"
+                    width="220px"
+                    class=""
+                    alt=""
+                  />
+                </a>
+                &nbsp;&nbsp;
+                <!-- <div class="padd"></div> -->
+                <a
+                  href="https://www.taskade.com/"
+                  style="text-decoration: none"
+                >
+                  <img
+                    src="./assets/taskade-logo.png"
+                    width="120px"
+                    class=""
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq-section" class="section faq-section">
+        <div class="container">
+          <div class="accordion">
+            <div>
+              <h1
+                class="animated flip delay-2s"
+                style="font-size: 36px; font-family: Poppins; font-weight: bold"
+              >
+                FAQs
+              </h1>
+            </div>
+            <br /><br /><br />
+            <div class="accordion-item">
+              <button
+                id="accordion-button-1"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >How can we apply for the Hackathon?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  We have partnered with Devfolio to provide you with the best
+                  experience all throughout Tic Tech Toe ‘20. Click on “Apply
+                  with Devfolio” to register yourself.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-1"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >What should be the team size?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Team size should be 3-5.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-2"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >Will teams be assigned or do we have to select the
+                  team?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  This hackathon would require great team work so we expect you
+                  to come up with your friends/colleagues to bring out the best
+                  in you. You can not apply individually.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-3"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title">When is the event?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  <b>Tic Tech Toe </b> is a 36 hour hackathon which will stretch
+                  from 7th November to 8th November 2020.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-4"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >What is the registration fee?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Go ahead and register, it’s free.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-5"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >What is the criteria for shortlisting the teams?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Registered participants will be shortlisted based on GitHub
+                  and LinkedIn profiles.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                id="accordion-button-5"
+                aria-expanded="false"
+                style="font-family: Poppins"
+              >
+                <span class="accordion-title"
+                  >What is the eligibility criteria?</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>You must be a University/College student.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <section id="schedule-section" class="section schedule-section">
-      <div class="schedule-section-section">
-        <div class="section-1" style="font-family: Poppins;">
-          <h2 style="text-align: center;">DAY 1</h2>
-          <table class="table-fill">
-            <tbody>
-              <tr>
-                <td>10 AM</td>
-                <td>
-                  Introduction to TicTechToe‘20 and Problem Statement
-                  Presentation
-                </td>
-              </tr>
-              <tr>
-                <td>10:30 AM</td>
-                <td>
-                  Finalize the Problem Statements, Team Formation & Brainstorm
-                </td>
-              </tr>
-              <tr>
-                <td>12 Noon</td>
-                <td>Eat. Code. Repeat 😋</td>
-              </tr>
-              <tr>
-                <td>1 PM</td>
-                <td>#HackTheXO Phase-1</td>
-              </tr>
-              <tr>
-                <td>5 PM</td>
-                <td>
-                  Submission of Phase-1 (Basic idea of what you are planning
-                  to do)
-                </td>
-              </tr>
-              <tr>
-                <td>6 PM</td>
-                <td>Speakers Session</td>
-              </tr>
-              <tr>
-                <td>7:30 PM</td>
-                <td>
-                  Mentor’s Introduction to each team for #HackTheXO phases
-                </td>
-              </tr>
-              <tr>
-                <td>8 PM</td>
-                <td>Dinner Break</td>
-              </tr>
-              <tr>
-                <td>9 PM</td>
-                <td>#HackTheXO Phase-2</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="partition"></div>
-        <div class="section-2" style="font-family: Poppins;">
-          <h2 style="text-align: center">DAY 2</h2>
-          <table class="table-fill">
-            <tbody>
-              <tr>
-                <td>7 AM</td>
-                <td>
-                  Submission of Phase-2 (Part Implemented till the end of
-                  Phase-2)
-                </td>
-              </tr>
-              <tr>
-                <td>8 AM <br/> </td>
-                <td>Breakfast Break</td>
-              </tr>
-              <tr>
-                <td>9 AM</td>
-                <td>#HackTheXO Phase-3</td>
-              </tr>
-              <tr>
-                <td>12 Noon</td>
-                <td>Lunch Break</td>
-              </tr>
-              <tr>
-                <td>1 PM</td>
-                <td>#HackTheXO Final Phase</td>
-              </tr>
-              <tr>
-                <td>4 PM</td>
-                <td>#HackTheXO Final Submission</td>
-              </tr>
-              <tr>
-                <td>5 PM</td>
-                <td>Sell your Product - #HackTheXO</td>
-              </tr>
-              <tr>
-                <td>8 PM</td>
-                <td>Dinner Break</td>
-              </tr>
-              <tr>
-                <td>9 PM</td>
-                <td>Result Declaration & Closing Ceremony</td>
-              </tr>
-              <tr>
-                <td style="padding-bottom: 30px !important; padding-top: 25px !important;">10 PM</td>
-                <td>#HackTheXO concludes, see you next year!</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <footer id="footer" class="footer">
+      <h1 style="font-size: 36px; font-weight: bold; letter-spacing: 5px">
+        Get in Touch With Us
+      </h1>
+      <div class="contact-numbers">
+        <a href="tel:+91-9714533000">Devanshu Vithlani: 9714533000</a> <br />
+        <a href="tel:+91-9427772012">Madhavendra Choksi: 9427772012</a> <br />
+        <a href="tel:+91-6354855612">Vishwa Shah: 6354855612</a>
       </div>
-    </section>
-
-
-    <section id="sponsors-section" class="section sponsors-section">
-      <div class="sponsors-section-section">
-        <div class="sponsors">
-          <h1 class="animated flip delay-2s" style="font-weight: bold;font-size: 36px;">Our Sponsors</h1>
-        </div>  <br>
-        <div class="sponsors-list">
-          <div class="sponsors-list-list">
-            <h5>Gold Sponsor</h5>
-            <a href="https://devfolio.co" style="text-decoration: none;">
-              <img src="./assets/dev.png" width="200px" class="" alt="" /></a>
-          </div>
-          <div class="sponsors-list-list">
-            <h5>Silver Sponsors</h5>
-            <div class="sponsors-list-img">
-            <a href="https://matic.network" style="text-decoration: none;">
-              <img src="./assets/matic2.png" width="220px" class="" alt="" />
-            </a>
-            &nbsp;&nbsp;
-           <!-- <div class="padd"></div> -->
-            <a href="https://fold.money" style="text-decoration: none;">
-              <img src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/fold.svg" width="120px" class="" alt="" />
-            </a>
-            &nbsp;&nbsp;
-            <a href="https://www.portis.io/">
-              <img src="https://raw.githubusercontent.com/IEEE-SB-DAIICT/Tic-Tech-Toe/master/assets/portis_logo.svg" width="120px" class="" alt=""  />
-            </a>
-            </div>
-          </div> 
-          <!--<div class="sponsors-list-list">
-             <h5>Coding Partners</h5>
-            <div class="sponsors-list-img">
-              <img src="./assets/CNLOGO.svg" width="180px" class="" alt="" /> &nbsp;&nbsp;
-              <img src="./assets/index.png" width="300px" class="" alt="" /> 
-              <img
-                src="./assets/0ba295b66f676a965ba15303344f9e553b9e5f54381820d3752eee997e0c5d97cec5dbd68de0edd07b62c69b5d6b11ed15dd4655fef05607afd6a9deab3e1cc1.png"
-                width="200px" class="" alt="" />
-            </div>
-          </div>-->
-        </div> 
-       <!-- <div id="mentors-section" class="mentors">
-          <h1 class="animated flip delay-2s">Our Mentors_</h1>
-        </div>
-        <div class="mentors-list">
-          <h4>To be announced soon...</h4>
-        </div> -->
+      <div class="other-contacts">
+        <a href="mailto:ifest@daiict.ac.in"> ifest@daiict.ac.in</a>
+        <a href="mailto:wie_ieee@daiict.ac.in"> wie_ieee@daiict.ac.in</a>
       </div>
-    </section>
+      <br /><br />
+      <p>© Copyright 2020 - IEEE SB DAIICT</p>
+    </footer>
 
-    <section id="faq-section" class="section faq-section">
-      <div class="container">
-        <div class="accordion">
-          <div>
-            <h1 class="animated flip delay-2s" style="font-size: 36px;font-family:Poppins;font-weight: bold;">FAQs</h1>
-          </div> <br><br><br>
-          <div class="accordion-item">
-            <button id="accordion-button-1" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title" >How can we apply for the Hackathon?</span><span class="icon"
-                aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>We have partnered with Devfolio to provide you with the best experience all throughout Tic Tech Toe ‘20. Click on “Apply with Devfolio” to register yourself.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-1" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title">What should be the team size?</span><span class="icon"
-                aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>Team size should be 3-5.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-2" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title">Will teams be assigned or do we have to select the team?</span><span class="icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>This hackathon would require great team work so we expect you to come up with your friends/colleagues to bring out the best in you. You can not apply individually.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-3" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title" >When is the event?</span><span class="icon" aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                <b>Tic Tech Toe </b> is a 36 hour hackathon which will stretch from 7th
-                November to 8th November 2020.
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-4" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title">What is the registration fee?</span><span class="icon"
-                aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>Go ahead and register, it’s free.</p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-5" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title" >What is the criteria for shortlisting the teams?</span><span class="icon"
-                aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>
-                Registered participants will be shortlisted based on GitHub
-                and LinkedIn profiles.
-              </p>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <button id="accordion-button-5" aria-expanded="false" style="font-family:Poppins;">
-              <span class="accordion-title" >What is the eligibility criteria?</span><span class="icon"
-                aria-hidden="true"></span>
-            </button>
-            <div class="accordion-content">
-              <p>You must be a University/College student.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <footer id="footer" class="footer">
-    <h1 style="font-size: 36px;font-weight: bold;letter-spacing: 5px;">Get in Touch With Us </h1>
-    <div class="contact-numbers">
-      <a href="tel:+91-9714533000">Devanshu Vithlani: 9714533000</a> <br>
-      <a href="tel:+91-9427772012">Madhavendra Choksi: 9427772012</a> <br>
-      <a href="tel:+91-6354855612">Vishwa Shah: 6354855612</a>
-    </div>
-    <div class="other-contacts">
-      <a  href="mailto:ifest@daiict.ac.in"> ifest@daiict.ac.in </p> </a>
-      <a  href="mailto:wie_ieee@daiict.ac.in"> wie_ieee@daiict.ac.in </p> </a>
-    </div>
-    <br><br>
-    <p> © Copyright 2020 - IEEE SB DAIICT</p>
-  </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/particles.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/particles.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let devfolioOptions = {
+          buttonSelector: '#devfolio-apply-now',
+          key: 'KEY',
+        };
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let devfolioOptions = {
-        buttonSelector: '#devfolio-apply-now',
-        key: 'KEY',
-      };
+        let script = document.createElement('script');
+        script.src = 'https://apply.devfolio.co';
+        document.head.append(script);
 
-      let script = document.createElement('script');
-      script.src = 'https://apply.devfolio.co';
-      document.head.append(script);
+        script.onload = function () {
+          new Devfolio(devfolioOptions);
+        };
 
-      script.onload = function () {
-        new Devfolio(devfolioOptions);
-      };
-
-      script.onerror = function () {
-        document
-          .querySelector(devfolioOptions.buttonSelector)
-          .addEventListener('click', function () {
-            window.location.href =
-              'https://devfolio.co/external-apply/' + devfolioOptions.key;
-          });
-      };
-    });
-  </script>
-  <script>
-    function navClicked(){
-      if(document.getElementById("chkToggle").checked){
-        // document.getElementsByTagName("canvas")[0].style.position = "absolute";
-        // document.getElementsByTagName("canvas")[0].style.top = "-300px";
+        script.onerror = function () {
+          document
+            .querySelector(devfolioOptions.buttonSelector)
+            .addEventListener('click', function () {
+              window.location.href =
+                'https://devfolio.co/external-apply/' + devfolioOptions.key;
+            });
+        };
+      });
+    </script>
+    <script>
+      function navClicked() {
+        if (document.getElementById('chkToggle').checked) {
+          // document.getElementsByTagName("canvas")[0].style.position = "absolute";
+          // document.getElementsByTagName("canvas")[0].style.top = "-300px";
+        } else {
+          // document.getElementsByTagName("canvas")[0].style.position = "relative";
+          // document.getElementsByTagName("canvas")[0].style.top = "0";
+        }
       }
-      else{
-        // document.getElementsByTagName("canvas")[0].style.position = "relative";
-        // document.getElementsByTagName("canvas")[0].style.top = "0";
-      }
-    }
-  </script>
-</body>
-</html> 
+    </script>
+  </body>
+</html>
